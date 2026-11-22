@@ -1,0 +1,40 @@
+{
+  "package": "all-provinces",
+  "scope": "全国 31 省（标准省码 11-65）",
+  "purpose": "网站切换为河北单省数据源前的全国统一库存档，可随时恢复",
+  "archiveDir": "数据",
+  "capturedAt": "2026-11-22T16:55:00+08:00",
+  "sourceFiles": [
+    "高考志愿助手/data/gaokao.db",
+    "高考志愿助手/data/gaokao.db.gz"
+  ],
+  "files": [
+    {
+      "name": "gaokao.db",
+      "bytes": 542081024,
+      "sha256": "f2c8245548bf32975d73d3e1d07962ed81dae529e6df98be7a735d6240714b47"
+    },
+    {
+      "name": "gaokao.db.gz",
+      "bytes": 110467751,
+      "sha256": "622cf7eb4e1e2879404aeb93d8bbad168a6495af71f13bbfd59fd8d4443b798f"
+    }
+  ],
+  "database": {
+    "dataVersion": "2026.11.19-1",
+    "builtAt": "2026-11-19T01:53:23.874Z",
+    "gaokaoYear": 2026,
+    "baselineYear": 2025,
+    "contentFingerprint": "890775fc9a34b218d7e9731f70b4e2675166e9458b751109fc1bb66cd55624ea"
+  },
+  "rowCounts": {
+    "score_range": 192646,
+    "school_adm": 770623,
+    "major_adm": 4404012,
+    "plan_code": 4532353,
+    "plan_info": 315286,
+    "school_code": 243727,
+    "school": 5354
+  },
+  "restore": "本包归档位置为仓库根目录的 数据/。恢复全国库时停止网站，把 数据/gaokao.db 与 数据/gaokao.db.gz 复制回 高考志愿助手/data/ 覆盖同名文件，删除 高考志愿助手/data/cache/ 后重启网站即可。"
+}
